@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <!-- Link to CSS File -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Form Container -->
-    <div class="container">
-      <h1>Contact Us</h1>
-      <form id="contact-form">
-        
-        <!-- Name Field -->
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-        <!-- Email Field -->
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="contact-form">
+            <h1>Contact Form</h1>
+            <p>We would love to hear from you. Please fill out the form below to get in touch.</p>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-        <!-- Message Field --> 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here...." required></textarea>
 
-        <!-- Submit Button -->
-        <button type="submit">Send Message</button>
-
-      </form>
-    </div>
-
-    <!-- Link to JS file -->
-    <script src="script.js"></script>
-
-  </body>
+                <div class="button-group">
+                    <button type="reset" class="reset-button">Reset</button>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>

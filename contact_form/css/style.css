@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f0e8d9;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* why ? */
+    height: 100vh;
+}
+
+.contact-form {
+    background: #ffffff; /* what is the difference between background and background color properties ? */
+    padding: 20px 30px; /* keep top bottom less and right left more why ? */
+    border-radius: 10px; /* why is this ideal ? */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* why ? how to decide ? */
+}
+
+.contact-form h1 {
+    margin-bottom: 10px; /* is it related to border-radius or box shadow properties ? */
+    font-size: 24px;
+    color: #333333;
+}
+
+.contact-form p {
+    margin-bottom: 20px; /* same question ? */
+    font-size: 14px;
+    color: #666666;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, textarea {
+    width: 100%;
+    padding: 10px; /* why is it relative or what ? */
+    margin-bottom: 15px; /* same question */
+    border: 1px solid #cccccc;
+    border-radius: 5px; /* is it related to contact form border radius ? */
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form .button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form button {
+    padding: 10px 20px; /* how is it connected to contact-form or other component ? */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-form .reset-button {
+    background-color: #333333; /* same as label color why ? */
+    color: #ffffff;
+}
+
+.contact-form .submit-button {
+    background-color: #ff007a;
+    color: #ffffff;
+}
+
+.contact-form .reset-button:hover, .submit-button:hover {
+    opacity: 0.9;
+}
